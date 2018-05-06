@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<customers>
+	<customer>
+		<id/>
+		<firstname/>
+		<surname/>
+		<email/>
+		<password/>
+	</customer>
+</customers>
