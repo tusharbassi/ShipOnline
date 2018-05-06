@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>ShipOnline Registration Page</title><meta charset="utf-8">
+	<meta name="title" content="ShipOnline System">
+	<meta name="description" content="Online shipping site">
+	<meta name="author" content="Tushar Bassi">
+</head>
+	<style>
+		body{
+			background-color:aqua;
+			width:60%;
+			padding: 0 20% 0 20%;
+		}
+		h1{
+		text-align:center;
+		}
+		.menu{
+		text-align:center;
+		border-bottom:1px solid;
+		padding-bottom:1%;
+		}
+		
+		.menu a{
+			text-decoration:none;
+			font-size:20px;
+			border:1px solid;
+			border-color:black;
+			color:black;
+			padding: 0 3% 0 3%;
+			background-color:skyblue;
+		}
+		p{
+			text-align:center;
+		}
+		.shipform{
+		}
+		.shipform p{
+			text-align:left;
+		}
+		.form{
+			width:80%;
+			margin-left:10%;
+		}
+		.labels{
+			float:left;
+		}
+		.labels label{
+			text-align:right;
+			font-size:18px;
+		}
+		.inputs{
+			float:right;
+		}
+		</style>
+<body>
+	<h1>ShipOnline</h1>
+	
+	<div class="menu">
+		<a href="login.htm">Home</a>
+		<a href="listing.htm">Listing</a>
+		<a href="bidding.php">Bidding</a>
+		<a href="maintenance.htm">Maintenance</a>
+		<a href="logout.htm">Log Out</a>
+	</div>
+	
+	<p>Registration Details</p>
+	
+	<form class="shipform">
+		<fieldset>
+			<p> * Required fields </p>
+		<nav class="form">	
+			<div class="labels	">
+				<label for="fname">First Name*</label><br><br>
+				<label for="sname">Surname*</label><br><br>
+				<label for="email">Email*</label><br><br>
+				<label for="password">Password*</label><br><br>
+				<label for="cpassword">Confirm Password*</label><br><br>
+			</div>
+						
+			<div class="inputs">
+				<input type="text" name="fname" id="fname" size="70"/>
+				<br><br>
+				<input type="text" name="sname" id="sname" size="70"/>
+				<br><br>
+				<input type="text" name="email" id="email" size="70"/>
+				<br><br>
+				<input type="password" name="password" id="password" size="70"/>
+				<br><br>
+				<input type="password" name="cpassword" id="cpassword" size="70"/>
+				<br><br>
+				<input type="submit" value="Register"/>
+				<input type="submit" value="Reset"/><br>
+			</div>
+		</nav>
+			
+		</fieldset>
+	<form>
+	
+</body>
+</html>

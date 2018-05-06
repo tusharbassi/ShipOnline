@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>ShipOnline Listing Page</title>
+	<meta charset="utf-8">
+	<meta name="title" content="ShipOnline System">
+	<meta name="description" content="Online shipping site">
+	<meta name="author" content="Tushar Bassi">
+</head>
+	<style>
+		body{
+			background-color:aqua;
+			width:60%;
+			padding: 0 20% 0 20%;
+		}
+		h1{
+		text-align:center;
+		}
+		.menu{
+		text-align:center;
+		border-bottom:1px solid;
+		padding-bottom:1%;
+		}
+		
+		.menu a{
+			text-decoration:none;
+			font-size:20px;
+			border:1px solid;
+			border-color:black;
+			color:black;
+			padding: 0 3% 0 3%;
+			background-color:skyblue;
+		}
+		p{
+			text-align:center;
+		}
+		.shipform{
+		}
+		.shipform p{
+			text-align:left;
+		}
+		.form{
+			width:80%;
+			margin-left:10%;
+		}
+		.labels{
+			float:left;
+		}
+		.labels label{
+			text-align:right;
+			font-size:18px;
+		}
+		.inputs{
+			float:right;
+		}
+		</style>
+<body>
+	<h1>ShipOnline</h1>
+	
+	<div class="menu">
+		<a href="login.htm">Home</a>
+		<a href="listing.htm">Listing</a>
+		<a href="bidding.php">Bidding</a>
+		<a href="maintenance.htm">Maintenance</a>
+		<a href="logout.htm">Log Out</a>
+	</div>
+	
+	<p><em>To create a listing, enter listing details below</em></p>
+	
+	<form class="shipform">
+		<fieldset>
+			<legend>Seller Details</legend>
+			<p> * Required fields </p>
+		<nav class="form">	
+			<div class="labels	">
+				<label for="itemname">Item Name*</label><br><br>
+				<label for="category">Category*</label><br><br>
+				<label for="description">Description*</label><br><br>
+				<label for="startprice">Start Price*</label><br><br>
+				<label for="reserveprice">Reserve Price*</label><br><br>
+				<label for="price">Buy It Now Price*</label><br><br>
+				<label for="duration">Duration*</label><br><br>
+			</div>
+						
+			<div class="inputs">
+				<input type="text" name="itemname" id="itemname" size="50"/>
+				<br><br>
+				<select name="category" id="category">
+					<option value="Camera">Camera</option>
+					<option value="Phone">Phone</option>
+					<option value="Other">Other</option>
+				</select>
+				<br><br>
+				<input type="description" name="description" id="description" size="50"/>
+				<br><br>
+				<input type="phone" name="startprice" id="startprice" value="0" maxlength="5" size="5"/>
+				<input type="phone" name="startprice" id="startprice" value="00" maxlength="2" size="2"/>
+				<br><br>				
+				<input type="phone" name="reserveprice" id="reserveprice" value="0" maxlength="5" size="5"/>
+				<input type="phone" name="reserveprice" id="reserveprice" value="00" maxlength="2" size="2"/>
+				<br><br>				
+				<input type="phone" name="price" id="price" value="0" maxlength="5" size="5"/>
+				<input type="phone" name="price" id="price" value="00" maxlength="2" size="2"/>
+				<br><br>
+				<select name="day" id="day">
+					<option value="0">Day</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+				<select name="hour" id="hour">
+					<option value="0">Hour</option>
+					<option value="1">1</option>
+					<option value="1">2</option>
+				</select>
+				<select name="minutes" id="minutes">
+					<option value="0">Minutes</option>
+					<option value="4">4</option>
+				</select><br><br>
+				<input type="submit" value="Login"/>
+				<input type="submit" value="Reset"/><br>
+			</div>
+		</nav>
+			
+		</fieldset>
+	</form>
+</body>
+</html>
